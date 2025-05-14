@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las mejores 3 series para adolescentes</title>
+  <link rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+  <header>
+    <h1>Las mejores 3 series para adolescentes</h1>
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">RESEÑA</a></li>
+        <li><a href="#">TRAILER</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="serie">
+      <div class="imagen">
+        <img src="Imagenes /1.jpg" alt="Riverdale" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>RIVERDALE</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p class="año">(2017)</p>
+          <p><strong>Dirección:</strong> Lee Toland Krieger</p>
+          <p><strong>Reparto:</strong> KJ Apa como Archie Andrews, Lili Reinhart como Betty Cooper, Camila Mendes como Veronica Lodge, Cole Sprouse como Jughead Jones, Madelaine Petsch como Cheryl Blossom</p>
+          <p>Basado en los cómics de Archie, Riverdale es una serie de misterio y drama adolescente que sigue a un grupo de jóvenes en un pequeño pueblo lleno de oscuros secretos. Todo comienza con la misteriosa muerte de Jason Blossom, lo que destapa una red de corrupción, crimen y relaciones complicadas entre los habitantes de Riverdale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="Imagenes /2.jpg" alt="Outer Banks" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>OUTER BANKS</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p class="año">(2020)</p>
+          <p><strong>Dirección:</strong> Jonas Pate</p>
+          <p><strong>Reparto:</strong> Chase Stokes John B, Madelyn Cline Sarah Cameron, Rudy Pankow JJ Maybank, Jonathan Daviss Pope, Madison Bailey Kiara</p>
+          <p>Una serie de aventuras y misterio que sigue a un grupo de amigos, los Pogues, en la isla de Outer Banks, Carolina del Norte. John B, el líder de este grupo, está decidido a encontrar el tesoro relacionado con la desaparición de su padre. En el camino, enfrentan peligros, romances y la rivalidad con los ricos Kooks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="serie">
+      <div class="imagen">
+        <img src="Imagenes /3.jpg" alt="The Vampire Diaries" />
+      </div>
+      <div class="descripcion">
+        <div class="titulo-serie">
+          <h2>THE VAMPIRE DIARIES</h2>
+          <span class="flecha">&#9654;</span>
+        </div>
+        <div class="contenido-serie">
+          <p class="año">(2009)</p>
+          <p><strong>Dirección:</strong> Marcos Siega</p>
+          <p><strong>Reparto:</strong> Nina Dobrev Elena, Paul Wesley Stefan Salvatore, Ian Somerhalder Damon Salvatore</p>
+          <p>Elena Gilbert, una joven de Mystic Falls, se enamora de Stefan Salvatore, sin saber que él es un vampiro de siglos de edad. Pronto, su relación se complica con la llegada de Damon, el carismático y peligroso hermano de Stefan. Entre triángulos amorosos y elementos sobrenaturales, la serie explora el mundo de vampiros, brujas y hombres lobo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="botones-pie">
+      <a href="tel:+525512345678" class="btn-footer">
+        <i class="fas fa-phone"></i> +52 56 3003 0426
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="btn-footer">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="btn-footer">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.titulo-serie').forEach(titulo => {
+      titulo.addEventListener('click', () => {
+        const descripcion = titulo.parentElement;
+        descripcion.classList.toggle('active');
+        const flecha = titulo.querySelector('.flecha');
+        flecha.classList.toggle('abierta');
+      });
+    });
+  </script>
+</body>
+</html>

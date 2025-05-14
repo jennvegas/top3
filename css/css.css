@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, #000000, #ff0000); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.serie {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    background-color: #1c1c1c; 
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.imagen img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.descripcion {
+    flex: 1;
+}
+
+.titulo-serie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: linear-gradient(135deg, #000000, #ff0000); 
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.flecha {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.flecha.abierta {
+    transform: rotate(90deg);
+}
+
+.contenido-serie {
+    display: none;
+    padding: 10px 0;
+    color: #f0f0f0;
+}
+
+.descripcion.active .contenido-serie {
+    display: block;
+}
+
+
+footer {
+    background-color: #1c1c1c; 
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    border-top: 1px solid #333;
+}
+
+footer .redes-sociales a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ff4c4c; 
+    font-weight: bold;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+footer .contacto {
+    margin-top: 10px;
+}
+.botones-pie {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-footer {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, black, red);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-footer:hover {
+  background: linear-gradient(to right, red, black);
+}
+
+.btn-footer i {
+  margin-right: 8px;
+}
